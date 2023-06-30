@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/fotograf"
+    android:alpha="0.8">
+
+    <TextView
+        android:id="@+id/ques"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="question"
+        android:textSize="28sp"
+        android:layout_marginTop="120dp"
+        android:textAlignment="center"
+        />
+
+    <RadioGroup
+        android:id="@+id/options"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ques"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/option1_radio_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Option 1"
+            android:button="@null"
+            android:textAlignment="center"
+            android:textSize="22sp"
+            />
+
+        <RadioButton
+            android:id="@+id/option2_radio_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Option 2"
+            android:button="@null"
+            android:textAlignment="center"
+            android:textSize="22sp"
+            />
+
+        <RadioButton
+            android:id="@+id/option3_radio_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Option 3"
+            android:button="@null"
+            android:textAlignment="center"
+            android:textSize="22sp"
+            />
+
+        <RadioButton
+            android:id="@+id/option4_radio_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Option 4"
+            android:button="@null"
+            android:textAlignment="center"
+            android:textSize="22sp"
+            />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/ans"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/options"
+        android:textAlignment="center"
+        android:textSize="28sp"
+        android:layout_marginTop="60dp"
+        />
+
+</RelativeLayout>

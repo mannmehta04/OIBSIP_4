@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SplashScreen"
+    android:background="@drawable/stars"
+    android:alpha="0.8">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Android with Java Quiz!"
+        android:textSize="28sp"
+        android:textAlignment="center"
+        android:layout_marginTop="130dp"
+    />
+
+    <ImageView
+        android:id="@+id/androidLogo"
+        android:layout_width="150dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginLeft="30dp"
+        android:src="@drawable/android_logo" />
+
+    <ImageView
+        android:id="@+id/javaLogo"
+        android:layout_width="150dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="250dp"
+        android:layout_marginLeft="190dp"
+        android:src="@drawable/java_logo" />
+
+    <TextView
+        android:id="@+id/infoText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/javaLogo"
+        android:layout_centerInParent="true"
+        android:text="This Quiz is based on Android app development using Java. It covers some basic contents of Basic Java and Android. Quiz Consists of 5 questions which you have to guess correctly!"
+        android:textSize="16sp"
+        android:textAlignment="center"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="40dp"
+        />
+
+    <Button
+        android:id="@+id/start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/infoText"
+        android:textSize="28sp"
+        android:text="Let's Begin !"
+        android:backgroundTint="#03A9F4"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="80dp"
+        />
+
+</RelativeLayout>
